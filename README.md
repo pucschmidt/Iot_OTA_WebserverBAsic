@@ -10,7 +10,7 @@ Thank you to the arduino und ESP8266 community I based this code on (see all the
 *  with credentials either from SPIFFS File System or preconfigured in sketch 
 *  
 *  This sketch set up a async HTTP-REST-like server. and a parallel MQTT Client
-*        REST topic must be lower case  [.../iot/...] or [/status]
+*        REST topic must be lower case 
 *    
 *  curl http://IoT-Relay-1/iot/relay:on    
 *  curl http://IoT-Relay-1/iot/relay:off 
@@ -20,14 +20,14 @@ Thank you to the arduino und ESP8266 community I based this code on (see all the
 *  curl http://IoT-Relay-1/status		REM  status request
 *  curl http://IoT-Relay-1/otarequest		REM enter Over The Air Programming Mode (exit Mode by power or reset)
 *  curl http://IoT-Relay-1/storeasdefault
-*  curl http://IoT-Relay-1/setmqtt:mqtttopic   REM setMQTT [mqtttopic]
-*  curl http://IoT-Relay-1/setwifi:ssid:key:IoT-Relay-1  REM  switch to a different network by setwifi [ssid][password][host] ==> storeasdefault ==> reset
+*  curl http://IoT-Relay-1/setmqtt:mqtttopic   REM setMQTT 
+*  curl http://IoT-Relay-1/setwifi:ssid:key:IoT-Relay-1  REM  switch to a different network 
 *
 *  Second interface path via MQTT client interface (no Over the Air Programming commands)
 *  on channel  see config file
 *		status
 *		relay:on   or relay:off
-*		execute/file:[filename.txt]/mode:loop:1 REM execute filename in mode=once/loop with timefactor=1   any /iot command stops execution
+*		execute/file:filename.txt/mode:loop:1 REM execute filename in mode=once/loop with timefactor=1   any /iot command stops execution
 *
 *  curl http://IoT-HausNr/send/file:executefile.txt   REM send (upload) file=*.* to SPIFFS File system on ESP. File can have a different PC name
 *  curl http://IoT-HausNr/execute/file:executefile.txt/mode:loop:1 REM execute filename in mode=once/loop with timefactor=1   any /iot command stops execution
