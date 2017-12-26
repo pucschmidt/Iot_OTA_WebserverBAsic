@@ -1,0 +1,6 @@
+shield:relay
+relay:on/delay:2000
+relay:off/delay:4000
+relay:on/delay:4000
+relay:off/delay:2000
+end

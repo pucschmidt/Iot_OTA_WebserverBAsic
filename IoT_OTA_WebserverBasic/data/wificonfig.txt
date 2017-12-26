@@ -1,0 +1,9 @@
+ssid:ssidxxx
+key:xxx
+host:IoT-Relay-1
+ota:ota1234
+mqtt:home/groundfloor/kitchen
+board:wemosd1mini
+shield:relay
+init:/relay:off
+end
